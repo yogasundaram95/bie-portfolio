@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Sundaram Rama Swamy — Business Intelligence Engineer</title>
+    <meta name="description" content="Business Intelligence Engineer with 6+ years of experience building SQL, Amazon Redshift, and BI solutions. Expert in data warehousing, ETL pipelines, and analytics dashboards.">
+    <meta name="keywords" content="Business Intelligence, Data Engineer, SQL, Redshift, Tableau, Power BI, ETL, Data Warehouse">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yogasundaram95.github.io/bie-portfolio/">
+    <meta property="og:title" content="Yoga Sundaram Rama Swamy — Business Intelligence Engineer">
+    <meta property="og:description" content="6+ years building SQL, Redshift, and BI dashboards. Expert in dimensional modeling, ETL pipelines, and self-service analytics.">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yogasundaram95.github.io/bie-portfolio/">
+    <meta name="twitter:title" content="Yoga Sundaram Rama Swamy — Business Intelligence Engineer">
+    <meta name="twitter:description" content="6+ years building SQL, Redshift, and BI dashboards. Expert in dimensional modeling, ETL pipelines, and self-service analytics.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #1f4788;
+            --color-accent: #2563eb;
+            --color-text: #1f2937;
+            --color-text-light: #6b7280;
+            --color-border: #e5e7eb;
+            --color-bg: #ffffff;
+            --color-bg-light: #f9fafb;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-primary: #e0e7ff;
+                --color-accent: #60a5fa;
+                --color-text: #f3f4f6;
+                --color-text-light: #d1d5db;
+                --color-border: #374151;
+                --color-bg: #111827;
+                --color-bg-light: #1f2937;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--color-text);
+            background: var(--color-bg);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header & Hero */
+        header {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .hero {
+            padding: 40px 0 60px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .headline {
+            font-size: 1.25rem;
+            color: var(--color-text-light);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+
+        .contact-links a {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--color-accent);
+            color: white;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 24px;
+            transition: opacity 0.2s;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 32px;
+            color: var(--color-primary);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        /* Summary */
+        .summary-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--color-text);
+            max-width: 800px;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .skill-category {
+            background: var(--color-bg-light);
+            padding: 24px;
+            border-radius: 8px;
+        }
+
+        .skill-category h3 {
+            color: var(--color-accent);
+            margin-bottom: 12px;
+        }
+
+        .skill-category p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--color-text-light);
+        }
+
+        /* Experience Timeline */
+        .experience-item {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+        }
+
+        .experience-item:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 16px;
+        }
+
+        .experience-title {
+            flex: 1;
+        }
+
+        .experience-title h3 {
+            color: var(--color-primary);
+        }
+
+        .experience-company {
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 4px;
+        }
+
+        .experience-meta {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+        }
+
+        .experience-dates {
+            text-align: right;
+            white-space: nowrap;
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+        }
+
+        .experience-bullets {
+            list-style: none;
+            margin-top: 12px;
+        }
+
+        .experience-bullets li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .experience-bullets li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .project-item {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+        }
+
+        .project-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 8px;
+        }
+
+        .project-title h3 {
+            color: var(--color-primary);
+        }
+
+        .project-year {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            white-space: nowrap;
+        }
+
+        .project-tech {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .project-bullets {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .project-bullets li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .project-bullets li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+
+        /* Certifications */
+        .certification-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 16px 0;
+            gap: 16px;
+        }
+
+        .certification-item:not(:last-child) {
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .certification-name {
+            font-weight: 600;
+        }
+
+        .certification-date {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            white-space: nowrap;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .education-degree {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .education-school {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            margin-bottom: 2px;
+        }
+
+        .education-meta {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+        }
+
+        .education-details {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            margin-top: 6px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .headline {
+                font-size: 1.1rem;
+            }
+
+            .contact-links {
+                gap: 16px;
+                flex-direction: column;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .experience-dates {
+                text-align: left;
+            }
+
+            .project-title {
+                flex-direction: column;
+            }
+
+            .project-year {
+                text-align: left;
+            }
+
+            .certification-item {
+                flex-direction: column;
+            }
+
+            .certification-date {
+                text-align: left;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <header>
+            <div class="hero">
+                <h1>Yoga Sundaram Rama Swamy</h1>
+                <p class="headline">Business Intelligence Engineer</p>
+
+                <div class="contact-links">
+                    <a href="mailto:yogasundaram95@gmail.com">yogasundaram95@gmail.com</a>
+                    <a href="tel:2162002712">216-200-2712</a>
+                    <a href="https://github.com/yogasundaram95" target="_blank">github.com/yogasundaram95</a>
+                    <a href="https://linkedin.com/in/yogasundaram" target="_blank">linkedin.com/in/yogasundaram</a>
+                </div>
+
+                <a href="resume.pdf" class="cta-button" download>Download Resume (PDF)</a>
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <section id="summary">
+            <h2>Summary</h2>
+            <p class="summary-text">
+                Business Intelligence Engineer / Data Analyst with 6+ years building advanced SQL and Amazon Redshift transformations, ETL pipelines, dimensional data models, and automated reporting across Amazon-scale operational datasets. Deep experience in Amazon QuickSight, Tableau, and Power BI dashboards supporting Weekly Operational Reviews (WBR) and leadership scorecards; skilled in metric validation and reconciliation, root-cause investigation of metric discrepancies, and applying generative AI / LLM-assisted analytics for anomaly investigation and self-service reporting.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>SQL & Warehousing</h3>
+                    <p>Advanced SQL, Amazon Redshift (query optimization, transformations), MySQL, SQL Server, Snowflake, Oracle, Dimensional Modeling, Star Schema, Staging Layers, ETL/ELT Pipelines, dbt, Data Warehousing</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>BI & Visualization</h3>
+                    <p>Amazon QuickSight, Tableau, Power BI (DAX, Power Query), Advanced Excel, Executive Scorecards, WBR/QBR Reporting, Self-Service Dashboards</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming & Statistics</h3>
+                    <p>Python (Pandas, NumPy, Scikit-learn), R (tidyverse, statsmodels), VBA, Statistical Analysis, Time-Series, Regression</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS (Redshift, S3, EC2, Lambda), Azure Fabric, Git</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>AI & Data Quality</h3>
+                    <p>Generative AI / LLM-Assisted Analytics, Anomaly Detection & Investigation, Metric Validation & Reconciliation, Data Governance, Automated Validation Checks, Power Automate</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Research Assistant – AI Model Adoption</h3>
+                        <div class="experience-company">Cleveland State University</div>
+                        <div class="experience-meta">Cleveland, OH</div>
+                    </div>
+                    <div class="experience-dates">Jan 2026 – Present</div>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Engineered a panel time-series dataset (75 AI models, 821 daily observations, 67 features) by mining and integrating heterogeneous sources (npm, HuggingFace, GitHub APIs) with Python and R ETL pipelines.</li>
+                    <li>Designed end-to-end ingestion pipelines with versioned schema scripts automating data collection, transformation, and validation for technology adoption forecasting models.</li>
+                    <li>Investigated and documented cross-source metric discrepancies (package contamination, snapshot bias, contributor-count anomalies) and established data integrity protocols that prevented downstream modeling errors.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>AI Trainer – Data & Analytics Domain</h3>
+                        <div class="experience-company">Handshake AI (Stripe)</div>
+                        <div class="experience-meta">Remote</div>
+                    </div>
+                    <div class="experience-dates">Mar 2026 – Present</div>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Conduct rubric-based evaluations of frontier LLM responses on SWE-Bench and terminal-agent benchmark tasks, grading across accuracy, reasoning, and communication dimensions with written justifications and preference rankings.</li>
+                    <li>Author golden solutions, failing test cases, and challenging multi-step command-line tasks that expose model failure modes, producing evaluation data used to benchmark and improve frontier LLM performance.</li>
+                    <li>Write realistic domain prompts and grading rubrics to identify where models fail on complex analytical questions, building hands-on judgment for deploying LLM-assisted anomaly investigation and reporting responsibly.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Data Analyst & BI (Sales Operations Co-op)</h3>
+                        <div class="experience-company">Bendix Commercial Vehicle Systems</div>
+                        <div class="experience-meta">Avon, OH</div>
+                    </div>
+                    <div class="experience-dates">Jan 2025 – Dec 2025</div>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Designed automated ETL pipelines extracting from multiple upstream source systems (SharePoint, CRM, SAP HANA), applying SQL transformation and validation logic across 100K+ records with zero-error migration, 2 weeks ahead of schedule.</li>
+                    <li>Built star-schema data models and staging layers in Power BI; defined governance standards (documented KPI definitions, DAX measures, automated validation checks) sustaining 99%+ metric accuracy for leadership reporting.</li>
+                    <li>Built automated SQL reporting pipelines for monthly business reviews serving program managers and sales leadership, reducing recurring report preparation from 6 hours to 25 minutes and improving on-time delivery.</li>
+                    <li>Built a monthly tariff reporting pipeline in Power BI and Excel for key accounts (Daimler, PACCAR, Volvo, Blue Bird); partnered with Account Managers and Sales Finance Directors to translate ambiguous questions into defensible metrics.</li>
+                    <li>Automated survey and data refresh workflows via Power Automate, saving 2.36 hours/day; resolved data quality issues through EDA and normalization, increasing reporting reliability by 35% and shortening analysis cycles by 50%.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Machine Learning Data Analyst</h3>
+                        <div class="experience-company">Amazon Development Centre</div>
+                        <div class="experience-meta">Chennai, India</div>
+                    </div>
+                    <div class="experience-dates">Nov 2019 – Mar 2023</div>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Wrote and optimized complex Amazon Redshift SQL transformations and data quality tests across large, multidimensional operational datasets, improving pipeline reliability and contributing to a 40% gain in downstream ML model accuracy.</li>
+                    <li>Designed real-time KPI dashboards in Amazon QuickSight tracking 10+ operational metrics across high-volume streams, cutting reporting lag 40% and enabling self-service metric exploration for non-technical audiences.</li>
+                    <li>Validated and reconciled metrics before leadership reviews; applied statistical analysis and SQL EDA to isolate performance drivers, driving 20% higher customer satisfaction and 15% higher retention.</li>
+                    <li>Led onboarding and best practices for 20+ analysts, standardizing SQL coding patterns, dashboard usage, and data quality SOPs; maintained 99.8% accuracy across 100,000+ records in weekly reporting frameworks.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Data Analyst</h3>
+                        <div class="experience-company">Gharib Shipping Services LLC</div>
+                        <div class="experience-meta">Chennai, India</div>
+                    </div>
+                    <div class="experience-dates">Jul 2017 – Oct 2019</div>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Conducted exploratory data analysis on 70,000+ historical records using SQL to identify bottlenecks in warehouse and shipping operations, improving efficiency by 15% and reducing monthly costs by $2K.</li>
+                    <li>Independently built and maintained recurring operational reports and data validation frameworks supporting leadership decisions; established data consistency standards across multiple operational systems.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Selected Projects</h2>
+
+            <div class="project-item">
+                <div class="project-title">
+                    <h3>AI Model Adoption – Panel Time-Series Forecasting</h3>
+                    <div class="project-year">2026</div>
+                </div>
+                <div class="project-tech">Python, R, pandas, statsmodels</div>
+                <ul class="project-bullets">
+                    <li>Integrated 5+ heterogeneous sources (npm, HuggingFace, GitHub, AIID) into automated ingestion pipelines with documented data quality controls, supporting technology adoption forecasting across 75 AI models.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">
+                    <h3>Digital Divide: Broadband & Social Vulnerability</h3>
+                    <div class="project-year">2025</div>
+                </div>
+                <div class="project-tech">R, Python, SQL, Tableau, ArcGIS</div>
+                <ul class="project-bullets">
+                    <li>Built multi-source SQL and R pipelines joining FCC, CDC, and Microsoft datasets across 3,000+ U.S. counties; visualized broadband disparity insights in interactive Tableau dashboards with parameters and drill-downs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <div class="education-degree">Master of Information Systems</div>
+                <div class="education-school">Cleveland State University, Cleveland, OH</div>
+                <div class="education-meta">Aug 2023 – Dec 2025</div>
+                <div class="education-details">GPA: 3.94/4.00</div>
+                <div class="education-details">Coursework: Business Intelligence Systems, Data Visualization, Modern Database Design, Machine Learning</div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-degree">Bachelor of Technology, Aeronautical Engineering</div>
+                <div class="education-school">BSA Crescent Institute, Chennai, India</div>
+                <div class="education-meta">Jun 2013 – Jun 2017</div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+
+            <div class="certification-item">
+                <div class="certification-name">Microsoft Certified: Fabric Data Engineer Associate (DP-700)</div>
+                <div class="certification-date">Dec 2025</div>
+            </div>
+
+            <div class="certification-item">
+                <div class="certification-name">Google Data Analytics Professional Certificate</div>
+                <div class="certification-date">Oct 2024</div>
+            </div>
+
+            <div class="certification-item">
+                <div class="certification-name">Oracle Cloud Data Management Certified Foundations Associate</div>
+                <div class="certification-date">Nov 2023</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Yoga Sundaram Rama Swamy. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
